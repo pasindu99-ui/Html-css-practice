@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="advanced.css">
+    <title>Combinator</title>
+    <style>
+        /* decent conbinator */
+        div li{
+            color: rgb(129, 255, 129);
+        }
+        /* child combinator */
+        div > p{
+            color: red;
+        }
+
+         /* adjecent combinator */
+        h3 + p{
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: underline;
+        } 
+        /* general sibling combinator */
+        h2 ~ p{
+            font-style: italic;
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+   <!-- decendent combinator -->
+   <div>
+       <ul>
+           <li>list item</li>
+           <li>list item</li>
+           <li>list item</li>
+           <li>list item</li>
+       </ul>
+   </div>
+<br>
+<hr>
+   <!-- child combinator -->
+   <div>
+       <p>paragraph content...</p>
+       <article>
+           <p>paragraph content..</p>
+       </article><br>
+       <hr>
+   </div>
+   <!-- adjacent elements -->
+   <h3>Example element</h3>
+   <p>stuff inside my paragraph..</p>
+   <p>stuff inside my paragraph..</p>
+   <p>stuff inside my paragraph..</p>
+   <h3>more Example</h3>
+   <p>stuff inside my paragraph..</p>
+   <p>stuff inside my paragraph..</p>
+   <p>stuff inside my paragraph..</p>
+   <br><hr>
+
+   <!-- general sibling combinator -->
+   <h1>some examples</h1>
+   <p>stuff inside my paragraph..</p>
+   <p>stuff inside my paragraph..</p>
+   <p>stuff inside my paragraph..</p>
+   <h2>more Example</h2>
+   <p>stuff inside my paragraph..</p>
+   <p>stuff inside my paragraph..</p>
+   <div>stuff inside my div</div>
+   <p>stuff inside my paragraph..</p>
+   <div>stuff inside my div</div>
+   <p>stuff inside my paragraph..</p>
+   <br><hr>
+</body>
+</html>

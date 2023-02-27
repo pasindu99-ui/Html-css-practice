@@ -1,0 +1,79 @@
+/* basic style */
+
+body {
+  background-color: #333;
+}
+/* box */
+
+.box {
+  background-color: white;
+  height: 200px;
+  width: 200px;
+  position: relative;
+  animation-name: sampleanimation;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  /* animation-delay: 5s; */
+  /* animation-direction: alternate; */
+  /* animation-timing-function: ease-in-out; */
+  animation-fill-mode: forwards;
+}
+
+/* keyframes - with movements*/
+/* 
+@keyframes sampleanimation {
+  0% {
+    background-color: white;
+    left: 0px;
+    top: 0px;
+    border-radius: 0;
+  }
+  25% {
+    background-color: rgb(251, 35, 35);
+    left: 0px;
+    top: 250px;
+    border-radius: 10%;
+  }
+  50% {
+    background-color: rgb(35, 165, 251);
+    left: 250px;
+    top: 250px;
+    border-radius: 25%;
+  }
+  75% {
+    background-color: rgb(221, 255, 28);
+    left: 250px;
+    top: 0px;
+    border-radius: 37%;
+  }
+  100% {
+    background-color: rgb(221, 3, 250);
+    left: 0px;
+    top: 0px;
+    border-radius: 50%;
+  }
+} */
+
+/* without movements */
+/* @keyframes sampleanimation {
+  0% {
+    background-color: white;
+    border-radius: 0;
+  }
+  25% {
+    background-color: rgb(251, 35, 35);
+    border-radius: 10%;
+  }
+  50% {
+    background-color: rgb(35, 165, 251);
+    border-radius: 25%;
+  }
+  75% {
+    background-color: rgb(221, 255, 28);
+    border-radius: 37%;
+  }
+  100% {
+    background-color: rgb(221, 3, 250);
+    border-radius: 50%;
+  }
+} */

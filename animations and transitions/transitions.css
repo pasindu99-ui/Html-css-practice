@@ -1,0 +1,24 @@
+/* basic styling */
+body {
+  background-color: grey;
+}
+/* box transitions */
+
+.box {
+  background-color: white;
+  height: 200px;
+  width: 200px;
+  position: relative;
+  margin: auto;
+  top: 200px;
+  transition-property: background-color, border-radius, transform;
+  transition-duration: 1s, 2s, 3s;
+  /* transition-delay: 5s; */
+  transition-timing-function: ease-in-out;
+}
+
+.box:hover {
+  background-color: rgb(72, 0, 108);
+  border-radius: 30%;
+  transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+}

@@ -1,0 +1,125 @@
+/* reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* whole document */
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(133, 21, 168);
+}
+
+/* slider */
+
+.slider {
+  position: absolute;
+  width: 65%;
+  overflow: hidden;
+}
+
+.images {
+  display: flex;
+  width: 100%;
+}
+
+.images img {
+  height: 800px;
+  width: 100%;
+  background-size: cover;
+  transition: all 0.5s ease-in;
+}
+
+.images input {
+  display: none;
+}
+
+/* navigation */
+
+.squares {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+
+.squares label {
+  height: 20px;
+  width: 20px;
+  border-radius: 4%;
+  border: #fff solid 3px;
+  cursor: pointer;
+  margin: 5px;
+  transition: all 0.5s ease-in;
+}
+
+.squares label:hover {
+  background-color: #fff;
+}
+
+/* point radio buttons to images */
+
+#img1:checked ~ .im1 {
+  margin-left: 0;
+}
+#img2:checked ~ .im2 {
+  margin-left: -100%;
+}
+
+#img3:checked ~ .im3 {
+  margin-left: -200%;
+}
+
+#img4:checked ~ .im4 {
+  margin-left: -300%;
+}
+
+/* responsive */
+@media (max-width: 2000px) {
+  .slider {
+    width: 35%;
+  }
+  .images img {
+    height: 400px;
+  }
+}
+
+@media (max-width: 1550px) {
+  .slider {
+    width: 39%;
+  }
+  .images img {
+    height: 400px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .slider {
+    width: 50%;
+  }
+  .images img {
+    height: 360px;
+  }
+}
+@media (max-width: 900px) {
+  .slider {
+    width: 45%;
+  }
+  .images img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 590px) {
+  .slider {
+    width: 37%;
+  }
+  .images img {
+    height: 150px;
+  }
+}

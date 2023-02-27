@@ -1,0 +1,90 @@
+/* psudo classes */
+
+.link {
+  font-size: 25px;
+  background-color: rgb(255, 255, 255);
+}
+.link:hover {
+  background-color: black;
+}
+.link:active {
+  background-color: red;
+}
+.link:visited {
+  background-color: green;
+}
+
+.chl p:first-child {
+  color: blue;
+}
+.chl p:last-child {
+  color: rgb(8, 120, 59);
+}
+
+.chl p:nth-child(3) {
+  color: rgb(237, 58, 58);
+}
+
+.chl p:nth-child(even) {
+  color: pink;
+}
+
+input[type="text"]:focus {
+  background-color: green;
+}
+input[type="email"]:disabled {
+  background-color: black;
+}
+input[type="checkbox"]:checked + P {
+  background-color: rgb(42, 165, 144);
+}
+
+/* psudo elements */
+
+.req::before {
+  content: "";
+  height: 15px;
+  width: 15px;
+  display: block;
+  background-color: red;
+}
+.req::after {
+  content: "";
+  height: 2px;
+  width: 150px;
+  display: block;
+  background-color: blue;
+}
+
+.frm button {
+  position: relative;
+}
+.frm button:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: 5px;
+  padding: 5px;
+  background-color: lightblue;
+}
+
+.para::first-letter {
+  color: red;
+  font-size: xx-large;
+}
+
+.para::first-line {
+  color: blue;
+  font-variant: small-caps;
+}
+
+::selection {
+  color: red;
+  background-color: yellow;
+}
+h2::selection {
+  color: red;
+  background-color: rgb(127, 99, 240);
+}

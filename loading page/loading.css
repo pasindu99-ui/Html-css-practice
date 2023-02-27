@@ -1,0 +1,80 @@
+/* body */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(49, 49, 49));
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* loading section */
+
+.loading {
+  width: 150px;
+  height: 150px;
+  box-sizing: border-box;
+  border-radius: 20%;
+  border-top: 10px solid #0026e6;
+  position: relative;
+  animation: anime1 2s linear infinite;
+}
+
+/* using psudo elements */
+
+.loading::before,
+.loading::after {
+  content: "";
+  width: 150px;
+  height: 150px;
+
+  position: absolute;
+  left: 0;
+  top: -10px;
+  box-sizing: border-box;
+  border-radius: 20%;
+}
+
+.loading::before {
+  border-top: 10px solid #ffffff;
+  transform: rotate(120deg);
+}
+
+.loading::after {
+  border-top: 10px solid #ff0e0e;
+  transform: rotate(240deg);
+}
+
+/* text styling */
+
+.loading span {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  animation: anime2 2s linear infinite;
+}
+
+/* keyframes */
+
+@keyframes anime1 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes anime2 {
+  to {
+    transform: rotate(-360deg);
+  }
+  0% {
+    color: #ffffff;
+  }
+}
